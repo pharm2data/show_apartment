@@ -1,0 +1,22 @@
+square_feet = int(input("Number of square feet:"))
+bedroom = int(input("How many bedrooms?:"))
+bathroom = int(input("How many bathrooms?:"))
+floor = int(input("What floor is the unit located on?"))
+elevator = bool(input("Does the unit have an elevator (true/false):?"))
+off_street = bool(input("Does the unit have off-street parking (true/false)?:"))
+monthly_rent = int(input("What is the monthly rent ($)?:"))
+
+
+
+
+if square_feet >= 1500 and bedroom >= 2 and bathroom >= 2 and (elevator == True and off_street == True) and monthly_rent <= 2000:
+    print("Show the apartment to Able")
+
+if square_feet >= 500 and bedroom == 1 and bathroom == 1 and monthly_rent <= 1000:
+    print("Show the apartment to Baker")
+
+if square_feet >= 2500 and bedroom == 3 and bathroom == 2 and (elevator == True) and monthly_rent <= 2000 and floor >= 4:
+    print("Show the apartment to ")
+
+if square_feet >= 1500 and bedroom == 3 and bathroom == 2 and (elevator == True and off_street == True) and monthly_rent <= 3000 and floor >= 4:
+    print("Show the apartment to Delta")
